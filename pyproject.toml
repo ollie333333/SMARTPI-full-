@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartpi"
+version = "0.1.0"
+description = "SmartPi AI: Offline chatbot with GUI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy"
+]
+
+[project.scripts]
+smartpi-chat = "smartpi.gui:run_gui"
